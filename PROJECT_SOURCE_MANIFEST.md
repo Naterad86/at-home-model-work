@@ -1,7 +1,7 @@
 # At-Home Model Work — Project Source Manifest
 
-**Version:** 0.2  
-**Date:** 2026-08-16  
+**Version:** 0.3  
+**Date:** 2026-08-17  
 **Purpose:** Identify the minimum set of authoritative sources required to preserve project continuity, especially for V1 development, without turning the entire chat history into a source-of-truth system.
 
 ## Status Key
@@ -22,6 +22,7 @@
 | V1 workflow: Scope → Build Review Set → Review Each Call ↻ → Synthesize → Coach / Confirm / Commit → Follow Up / Resolve | User-facing workflow spine for V1 | RETAINED | Yes | Low | Preserve verbatim in future V1 artifacts |
 | 19-stage current-state workflow reconstruction | Evidence base supporting V1 design | CANONICAL | Yes | Low | Use the preserved V1 Call Review Transfer Package as the authoritative current-state reconstruction |
 | `Download the V1 Call Review Transfer Package.md` | Canonical current-state evidence source containing the reconstructed call-review workflow and supporting findings | CANONICAL | Yes | Low | Preserve unchanged; use as the authoritative V1 current-state evidence source |
+| V1 Call Review Interactive Companion prototype v0.1 | First verified interactive expression of the transcript-centered evidence-to-decision path | RETAINED — working prototype / preserved evidence | No | Low | Preserve source and QA unchanged; validate operationally before promoting behavior into canonical V1 |
 | Stabilized V1 project proposal | Leadership-facing decision artifact for continued development/validation | NEEDS PROMOTION | Not yet | Medium | Once stabilized, designate one exact version as canonical |
 | Devan Collaborator Space operating instructions / V3.0 | Defines collaborator role and technical-leapfrogging method | RETAINED | Current project instructions supersede portions | Low–Medium | Preserve only the latest useful version; older versions belong in Museum |
 | Global Copilot personalization instructions | Carries Nate's operating style into the enterprise environment | NEEDS PROMOTION | Unclear | Medium | Preserve the exact deployed/current version when finalized |
@@ -46,16 +47,30 @@ This artifact is the authoritative current-state evidence source for V1 developm
 
 The artifact is evidence, not permission to treat unresolved claims as verified requirements. Its internal evidence labels and unresolved questions remain authoritative parts of the source.
 
+## Preserved V1 Interactive Prototype Checkpoint
+
+**Artifact:** V1 Call Review Interactive Companion — prototype v0.1  
+**Repository path:** `deliverables/v1-call-review-field-guide/prototypes/v0.1-interactive-companion/`  
+**Status:** RETAINED — WORKING PROTOTYPE / PRESERVED EVIDENCE  
+**Canonical:** No  
+**Preservation commit:** `b2139d34f08f89da8bc9c1e7b649087b9693638d`  
+**Live demonstration:** https://call-review-field-guide-coach.galipone86.chatgpt.site  
+**Printable companion SHA-256:** `c46df2ab9dc5f65dd2eedc3c6ac1fec4fb0a8117dad4270a4b7827cac15ca859`  
+**Verification:** `npm run build` PASS; `npm run test:sites` PASS (4/4)
+
+This checkpoint preserves the runnable source, dependency lockfile, Sites build support, browser QA evidence, product-boundary instructions, and printable decision tree. It is an implementation hypothesis and reconstruction point—not the canonical Field Guide, operational validation, an enterprise integration, or authority to replace PHUB, the source audio platform, or Coaching Partner judgment.
+
 ## Current Source-of-Truth Hierarchy
 
 1. **Current project instructions**
 2. **Current V1 scope and workflow definition**
 3. **Canonical V1 current-state evidence source:**
    - `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md`
-4. **Current stabilized V1 proposal** once promoted
-5. **Reusable methodology artifacts** after reconciliation
-6. **Dashboard summaries**
-7. **Museum / historical chats / exploratory research**
+4. **Preserved prototypes and implementation evidence** (non-canonical)
+5. **Current stabilized V1 proposal** once promoted
+6. **Reusable methodology artifacts** after reconciliation
+7. **Dashboard summaries**
+8. **Museum / historical chats / exploratory research**
 
 ## Highest-Priority Gaps
 
@@ -91,6 +106,8 @@ Everything else can remain in the Museum or in its original enterprise environme
 ## Immediate Next State
 
 The V1 current-state evidence gap is now closed. The complete transfer package and its 19-stage workflow reconstruction are preserved as the canonical V1 current-state evidence source.
+
+The interactive companion prototype v0.1 is also preserved as a non-canonical working checkpoint. Its existence does not promote its interface decisions into the Field Guide; operational validation remains required.
 
 The next preservation pass should focus on whichever artifact becomes operationally necessary first among:
 
