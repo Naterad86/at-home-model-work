@@ -1,6 +1,6 @@
 # At-Home Model Work — Project Source Manifest
 
-**Version:** 0.3  
+**Version:** 0.4  
 **Date:** 2026-08-17  
 **Purpose:** Identify the minimum set of authoritative sources required to preserve project continuity, especially for V1 development, without turning the entire chat history into a source-of-truth system.
 
@@ -23,7 +23,7 @@
 | 19-stage current-state workflow reconstruction | Evidence base supporting V1 design | CANONICAL | Yes | Low | Use the preserved V1 Call Review Transfer Package as the authoritative current-state reconstruction |
 | `Download the V1 Call Review Transfer Package.md` | Canonical current-state evidence source containing the reconstructed call-review workflow and supporting findings | CANONICAL | Yes | Low | Preserve unchanged; use as the authoritative V1 current-state evidence source |
 | V1 Call Review Interactive Companion prototype v0.1 | First verified interactive expression of the transcript-centered evidence-to-decision path | RETAINED — working prototype / preserved evidence | No | Low | Preserve source and QA unchanged; validate operationally before promoting behavior into canonical V1 |
-| Stabilized V1 project proposal | Leadership-facing decision artifact for continued development/validation | NEEDS PROMOTION | Not yet | Medium | Once stabilized, designate one exact version as canonical |
+| V1 Coaching Partner Call-Review Field Guide Proposal v0.1 | First content-stabilization draft of the leadership request for continued development and supported validation | RETAINED — working proposal draft | No | Low | Refine and compress; promote one exact version only after content freeze |
 | Devan Collaborator Space operating instructions / V3.0 | Defines collaborator role and technical-leapfrogging method | RETAINED | Current project instructions supersede portions | Low–Medium | Preserve only the latest useful version; older versions belong in Museum |
 | Global Copilot personalization instructions | Carries Nate's operating style into the enterprise environment | NEEDS PROMOTION | Unclear | Medium | Preserve the exact deployed/current version when finalized |
 | PHUB coaching template / coaching methodology extraction | Reusable coaching-process structure and diagnostic logic | REFERENCE-ONLY / partial | No | Medium–High | Preserve reconciled structure without agent/customer payload |
@@ -60,6 +60,16 @@ The artifact is evidence, not permission to treat unresolved claims as verified 
 
 This checkpoint preserves the runnable source, dependency lockfile, Sites build support, browser QA evidence, product-boundary instructions, and printable decision tree. It is an implementation hypothesis and reconstruction point—not the canonical Field Guide, operational validation, an enterprise integration, or authority to replace PHUB, the source audio platform, or Coaching Partner judgment.
 
+## Preserved V1 Leadership Proposal Draft
+
+**Artifact:** V1 Coaching Partner Call-Review Field Guide — Request for Supported Validation, proposal v0.1  
+**Repository path:** `deliverables/v1-call-review-field-guide/proposal/V1_Coaching_Partner_Field_Guide_Proposal_v0.1.md`  
+**Status:** RETAINED — WORKING PROPOSAL DRAFT  
+**Canonical:** No  
+**Preservation commit:** `8aefc23f789a1636d9894c10adc3cb9f7c42b088`
+
+This draft stabilizes the leadership decision request, completed-work summary, V1 boundaries, proposed supported-validation path, success standard, and working meeting opening. It is a content-development checkpoint—not evidence of leadership awareness, sponsorship, approval, validated demand, measurable impact, or enterprise adoption readiness. Promote a later exact version only after the proposal content is frozen.
+
 ## Current Source-of-Truth Hierarchy
 
 1. **Current project instructions**
@@ -67,10 +77,11 @@ This checkpoint preserves the runnable source, dependency lockfile, Sites build 
 3. **Canonical V1 current-state evidence source:**
    - `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md`
 4. **Preserved prototypes and implementation evidence** (non-canonical)
-5. **Current stabilized V1 proposal** once promoted
-6. **Reusable methodology artifacts** after reconciliation
-7. **Dashboard summaries**
-8. **Museum / historical chats / exploratory research**
+5. **Retained proposal drafts** (non-canonical)
+6. **Current stabilized V1 proposal** once promoted
+7. **Reusable methodology artifacts** after reconciliation
+8. **Dashboard summaries**
+9. **Museum / historical chats / exploratory research**
 
 ## Highest-Priority Gaps
 
@@ -84,10 +95,10 @@ PHUB/template-derived coaching structure appears valuable, but its canonical pay
 
 **Action:** reconcile into one portable methodology artifact before building it into V1.
 
-### 3. Stabilized V1 proposal
-The leadership-facing proposal exists in project development but no exact repository version has yet been designated as canonical.
+### 3. Proposal stabilization
+Proposal v0.1 is now preserved in the repository as a non-canonical working draft. It is intentionally more complete than the final meeting-length brief and still requires content compression and leadership-framing review.
 
-**Action:** once the proposal is stabilized, preserve and promote one exact version.
+**Action:** refine the draft, freeze the proposal claim and boundaries, then promote one exact version as the canonical leadership proposal.
 
 ## Minimal Preservation Rule
 
@@ -109,10 +120,12 @@ The V1 current-state evidence gap is now closed. The complete transfer package a
 
 The interactive companion prototype v0.1 is also preserved as a non-canonical working checkpoint. Its existence does not promote its interface decisions into the Field Guide; operational validation remains required.
 
+The leadership proposal v0.1 is preserved as a non-canonical content checkpoint. Proposal stabilization is now the active critical path; the draft should be compressed and frozen before any slide construction or canonical promotion.
+
 The next preservation pass should focus on whichever artifact becomes operationally necessary first among:
 
 - the coaching methodology/template reconciliation;
-- the stabilized V1 proposal;
+- stabilization and promotion of the V1 proposal;
 - the exact deployed Copilot instructions.
 
 Future V1 design changes should distinguish clearly between:
