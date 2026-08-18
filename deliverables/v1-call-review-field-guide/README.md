@@ -24,6 +24,25 @@ Prefer a purpose-led, evidence-linked, judgment-centered methodology over a scor
 
 The V1 should remain human-operable even if all AI assistance disappeared.
 
+## Enterprise AI Alignment — 2026-08-18
+
+A review of the enterprise AI baseline added an explicit governance and human-accountability boundary to V1.
+
+Adopted implications:
+
+- AI may support authorized evidence organization, summarization, note structure, question generation, and coaching preparation.
+- AI does not own consequential interpretation, employee-performance judgment, coaching priority, or formal action decisions.
+- AI-generated material must remain reviewable and subordinate to source evidence and professional judgment.
+- The Field Guide remains fully executable without AI; AI assistance is point-of-need support, not a workflow stage.
+- Any future move toward automated evaluation, scoring, autonomous workflow execution, production integration, or employee-impacting decisions must be treated as a separately governed use case rather than silently folded into V1.
+- Role-specific data permissions, transcript use, performance-metric handling, retention, and business-unit restrictions remain enterprise-verification questions before operational deployment.
+
+Sanitized alignment record:
+
+`evidence/2026-08-18-enterprise-ai-alignment.md`
+
+The underlying company training, screenshots, transcripts, and internal guidance remain enterprise-bound and are not stored in this repository.
+
 ## Preservation Boundary
 
 Do not place customer information, agent-specific protected information, proprietary enterprise payload, credentials, or other restricted material in this directory.
