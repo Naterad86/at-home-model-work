@@ -1,7 +1,7 @@
 # At-Home Model Work — Project Source Manifest
 
-**Version:** 0.2  
-**Date:** 2026-08-16  
+**Version:** 0.3  
+**Date:** 2026-08-18  
 **Purpose:** Identify the minimum set of authoritative sources required to preserve project continuity, especially for V1 development, without turning the entire chat history into a source-of-truth system.
 
 ## Status Key
@@ -22,6 +22,8 @@
 | V1 workflow: Scope → Build Review Set → Review Each Call ↻ → Synthesize → Coach / Confirm / Commit → Follow Up / Resolve | User-facing workflow spine for V1 | RETAINED | Yes | Low | Preserve verbatim in future V1 artifacts |
 | 19-stage current-state workflow reconstruction | Evidence base supporting V1 design | CANONICAL | Yes | Low | Use the preserved V1 Call Review Transfer Package as the authoritative current-state reconstruction |
 | `Download the V1 Call Review Transfer Package.md` | Canonical current-state evidence source containing the reconstructed call-review workflow and supporting findings | CANONICAL | Yes | Low | Preserve unchanged; use as the authoritative V1 current-state evidence source |
+| `2026-08-18-enterprise-ai-alignment.md` | Sanitized record of enterprise AI baseline implications for V1: human accountability, approved-tool/data boundaries, personal-productivity support, governance escalation, and AI-as-support-not-authority | RETAINED | Design input | Low if kept sanitized | Keep only transferable structure; raw enterprise training/guidance remains enterprise-bound |
+| Raw enterprise AI training screenshots, transcripts, and internal guidance | Source evidence used to establish the enterprise AI baseline | ENTERPRISE-BOUND | No | High if exported | Keep in authorized enterprise systems; do not store raw payload in this repository or personal cloud storage |
 | Stabilized V1 project proposal | Leadership-facing decision artifact for continued development/validation | NEEDS PROMOTION | Not yet | Medium | Once stabilized, designate one exact version as canonical |
 | Devan Collaborator Space operating instructions / V3.0 | Defines collaborator role and technical-leapfrogging method | RETAINED | Current project instructions supersede portions | Low–Medium | Preserve only the latest useful version; older versions belong in Museum |
 | Global Copilot personalization instructions | Carries Nate's operating style into the enterprise environment | NEEDS PROMOTION | Unclear | Medium | Preserve the exact deployed/current version when finalized |
@@ -46,16 +48,28 @@ This artifact is the authoritative current-state evidence source for V1 developm
 
 The artifact is evidence, not permission to treat unresolved claims as verified requirements. Its internal evidence labels and unresolved questions remain authoritative parts of the source.
 
+## Current V1 Enterprise-AI Alignment Record
+
+**Source:** `2026-08-18-enterprise-ai-alignment.md`  
+**Repository path:** `deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md`  
+**Status:** RETAINED design input  
+**Preservation mode:** Sanitized transferable structure only  
+**Preservation commit:** `57c0fd15d9d7cf6f1ffc541ef505d9c7e4961260`
+
+This record preserves the design consequences of the enterprise AI baseline without reproducing enterprise payload. It reinforces the current V1 architecture: AI may assist evidence handling and personal-productivity work, but consequential interpretation, coaching judgment, and formal decisions remain human-owned. Future automation, scoring, production integration, or employee-impacting AI use should be treated as separately governed use cases.
+
 ## Current Source-of-Truth Hierarchy
 
 1. **Current project instructions**
 2. **Current V1 scope and workflow definition**
 3. **Canonical V1 current-state evidence source:**
    - `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md`
-4. **Current stabilized V1 proposal** once promoted
-5. **Reusable methodology artifacts** after reconciliation
-6. **Dashboard summaries**
-7. **Museum / historical chats / exploratory research**
+4. **Adopted V1 design inputs that do not supersede current-state evidence:**
+   - `deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md`
+5. **Current stabilized V1 proposal** once promoted
+6. **Reusable methodology artifacts** after reconciliation
+7. **Dashboard summaries**
+8. **Museum / historical chats / exploratory research**
 
 ## Highest-Priority Gaps
 
@@ -74,6 +88,11 @@ The leadership-facing proposal exists in project development but no exact reposi
 
 **Action:** once the proposal is stabilized, preserve and promote one exact version.
 
+### 4. Enterprise verification for role-specific AI use
+The enterprise baseline supports a human-led personal-productivity model but does not, by itself, verify every Coaching Partner use case or data type.
+
+**Action:** verify role-specific permissions, transcript/performance-metric handling, retention rules, business-unit restrictions, and governance requirements before operational deployment of AI-assisted call-review mechanisms.
+
 ## Minimal Preservation Rule
 
 Do **not** archive every chat.
@@ -90,17 +109,21 @@ Everything else can remain in the Museum or in its original enterprise environme
 
 ## Immediate Next State
 
-The V1 current-state evidence gap is now closed. The complete transfer package and its 19-stage workflow reconstruction are preserved as the canonical V1 current-state evidence source.
+The V1 current-state evidence gap remains closed. The complete transfer package and its 19-stage workflow reconstruction remain the canonical V1 current-state evidence source.
+
+The enterprise AI baseline has now been incorporated as a **sanitized adopted design input**, strengthening the human-accountability and governance boundary without replacing the current-state evidence.
 
 The next preservation pass should focus on whichever artifact becomes operationally necessary first among:
 
 - the coaching methodology/template reconciliation;
 - the stabilized V1 proposal;
-- the exact deployed Copilot instructions.
+- the exact deployed Copilot instructions;
+- verified role-specific enterprise AI constraints for Coaching Partner workflows.
 
 Future V1 design changes should distinguish clearly between:
 
 - what the canonical current-state evidence says;
 - what has been verified since that evidence was collected;
 - what is a proposed improvement;
-- and what has been adopted into the user-facing V1 Field Guide.
+- what has been adopted into the user-facing V1 Field Guide;
+- and what remains enterprise-bound rather than portable project material.
