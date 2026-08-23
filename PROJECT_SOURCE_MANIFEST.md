@@ -1,129 +1,174 @@
 # At-Home Model Work — Project Source Manifest
 
-**Version:** 0.3  
-**Date:** 2026-08-18  
-**Purpose:** Identify the minimum set of authoritative sources required to preserve project continuity, especially for V1 development, without turning the entire chat history into a source-of-truth system.
+**Version:** 0.5 — reconciliation candidate  
+**Date:** 2026-08-23  
+**Status:** CANDIDATE on `controller/reconcile-v1-authority-2026-08-23`; becomes repository authority only after Nate-approved merge to `main`.  
+**Purpose:** Identify the minimum repository-managed sources required to preserve current V1 continuity without duplicating overall project state or non-repository Drive authority.
+
+## Repository Role
+
+GitHub stores maintained repository artifacts only: source/prototype code, governing or versioned specifications, canonical structured workflows/evidence, reusable maintained mechanisms, repository manifests, and meaningful frozen versions whose history matters.
+
+Google Drive controls the living overall program state, research, leadership deliverables, validation records, non-repository evidence, and historical records. GitHub does not maintain a synchronized duplicate of those records.
 
 ## Status Key
 
-- **CANONICAL** — Current authoritative source.
-- **RETAINED** — Sufficiently represented in current project context.
-- **REFERENCE-ONLY** — Existence/purpose is known, but the full source is not currently recoverable here.
-- **NEEDS PROMOTION** — Content exists, but no single canonical version is established.
-- **MUSEUM** — Historical/deprecated; useful for provenance, not current operation.
-- **ENTERPRISE-BOUND** — Payload should remain in the authorized enterprise environment; only transferable structure should be preserved here.
+- **GOVERNING** — current repository authority within its jurisdiction.
+- **CANONICAL EVIDENCE** — authoritative evidence source; not automatically product authority.
+- **ADOPTED DESIGN INPUT** — explicitly adopted constraint or design consequence.
+- **EXPERIMENTAL** — preserved implementation/test evidence; not governing product architecture.
+- **HISTORICAL** — meaningful provenance with no current authority.
+- **ENTERPRISE-BOUND** — protected payload remains in authorized enterprise systems; only transferable structure may be preserved here.
 
-## Core Manifest
+## Current Authority Hierarchy
 
-| Source / Artifact | Role in Project | Current State | Canonical? | Preservation Risk | Required Action |
-|---|---|---|---|---|---|
-| Current At-Home Model Work project instructions | Governs project operating logic, delivery/development/discovery/preservation, Devan role, enterprise boundaries | RETAINED | Yes | Low | Keep as current governing instructions |
-| V1 Call-Review Field Guide scope | Defines the current deliverable and prevents scope drift | RETAINED | Yes | Low | Treat as authoritative until explicitly superseded |
-| V1 workflow: Scope → Build Review Set → Review Each Call ↻ → Synthesize → Coach / Confirm / Commit → Follow Up / Resolve | User-facing workflow spine for V1 | RETAINED | Yes | Low | Preserve verbatim in future V1 artifacts |
-| 19-stage current-state workflow reconstruction | Evidence base supporting V1 design | CANONICAL | Yes | Low | Use the preserved V1 Call Review Transfer Package as the authoritative current-state reconstruction |
-| `Download the V1 Call Review Transfer Package.md` | Canonical current-state evidence source containing the reconstructed call-review workflow and supporting findings | CANONICAL | Yes | Low | Preserve unchanged; use as the authoritative V1 current-state evidence source |
-| `2026-08-18-enterprise-ai-alignment.md` | Sanitized record of enterprise AI baseline implications for V1: human accountability, approved-tool/data boundaries, personal-productivity support, governance escalation, and AI-as-support-not-authority | RETAINED | Design input | Low if kept sanitized | Keep only transferable structure; raw enterprise training/guidance remains enterprise-bound |
-| Raw enterprise AI training screenshots, transcripts, and internal guidance | Source evidence used to establish the enterprise AI baseline | ENTERPRISE-BOUND | No | High if exported | Keep in authorized enterprise systems; do not store raw payload in this repository or personal cloud storage |
-| Stabilized V1 project proposal | Leadership-facing decision artifact for continued development/validation | NEEDS PROMOTION | Not yet | Medium | Once stabilized, designate one exact version as canonical |
-| Devan Collaborator Space operating instructions / V3.0 | Defines collaborator role and technical-leapfrogging method | RETAINED | Current project instructions supersede portions | Low–Medium | Preserve only the latest useful version; older versions belong in Museum |
-| Global Copilot personalization instructions | Carries Nate's operating style into the enterprise environment | NEEDS PROMOTION | Unclear | Medium | Preserve the exact deployed/current version when finalized |
-| PHUB coaching template / coaching methodology extraction | Reusable coaching-process structure and diagnostic logic | REFERENCE-ONLY / partial | No | Medium–High | Preserve reconciled structure without agent/customer payload |
-| Ideal user evidence / Coaching Partner process-friction observations | Grounds the target-user problem in real operational evidence | RETAINED as summary | No | Medium | Extract only the generalized evidence needed for V1 positioning and validation |
-| HPT / CWA / JCS / KCS research | External methodology inputs used to improve problem diagnosis and human–AI boundaries | RETAINED as summaries | No | Low for V1, higher later | Keep summaries; preserve full research only if it becomes a direct V1 dependency |
-| External model / Perplexity transfer outputs | Independent analysis and methodology backfill | PARTIAL / REFERENCE-ONLY | No | Medium | Promote only conclusions that materially affect V1; leave the rest as Museum/research evidence |
-| Dashboard updates | Running state summaries across workspaces | RETAINED across project context but fragmented | No | Medium | Periodically produce one consolidated state snapshot; do not treat every dashboard update as canonical |
-| Defunct / 💀 project threads | Development history and superseded approaches | MUSEUM | No | Low | Preserve only as provenance; do not reintroduce into live architecture |
-| Enterprise customer/agent-specific payload | Operational evidence containing protected/internal information | ENTERPRISE-BOUND | No | Not a preservation gap | Keep inside enterprise tools; preserve only generalized structure, methods, and conclusions |
-
-## Canonical V1 Current-State Evidence
-
-**Source:** `Download the V1 Call Review Transfer Package.md`  
-**Repository path:** `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md`  
-**Status:** CANONICAL  
-**Preservation mode:** Source content preserved unchanged  
-**Source SHA-256:** `ba3f2d322422e257796d84dfa7c9d2a808d187a51b04d6330b26743d9757dabd`  
-**Preservation commit:** `1767df24931aabc0d6d46692980959250a301469`
-
-This artifact is the authoritative current-state evidence source for V1 development. It contains the complete 19-stage workflow reconstruction together with inputs, tools, decisions, outputs, system/resource roles, formal-versus-informal distinctions, friction points, workflow variations, unresolved questions, improvement candidates, transferable structural insights, and the condensed V1 workflow.
-
-The artifact is evidence, not permission to treat unresolved claims as verified requirements. Its internal evidence labels and unresolved questions remain authoritative parts of the source.
-
-## Current V1 Enterprise-AI Alignment Record
-
-**Source:** `2026-08-18-enterprise-ai-alignment.md`  
-**Repository path:** `deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md`  
-**Status:** RETAINED design input  
-**Preservation mode:** Sanitized transferable structure only  
-**Preservation commit:** `57c0fd15d9d7cf6f1ffc541ef505d9c7e4961260`
-
-This record preserves the design consequences of the enterprise AI baseline without reproducing enterprise payload. It reinforces the current V1 architecture: AI may assist evidence handling and personal-productivity work, but consequential interpretation, coaching judgment, and formal decisions remain human-owned. Future automation, scoring, production integration, or employee-impacting AI use should be treated as separately governed use cases.
-
-## Current Source-of-Truth Hierarchy
-
-1. **Current project instructions**
-2. **Current V1 scope and workflow definition**
-3. **Canonical V1 current-state evidence source:**
+1. **Nate’s current direction and active Project Settings.**
+2. **Drive living Current Program State** for changing overall project state:
+   - `At-Home Model Work — Current Program State`
+   - Drive ID: `1CG4IjJioIp_4Z47JMfT1m24SAtxJxFxBAsRzDt30rRM`
+3. **Canonical current-state evidence package** for reconstructed workflow/evidence claims:
    - `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md`
-4. **Adopted V1 design inputs that do not supersede current-state evidence:**
-   - `deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md`
-5. **Current stabilized V1 proposal** once promoted
-6. **Reusable methodology artifacts** after reconciliation
-7. **Dashboard summaries**
-8. **Museum / historical chats / exploratory research**
+4. **Current repository-managed V1 specification:**
+   - `deliverables/v1-call-review-field-guide/README.md`
+5. **Explicitly adopted design inputs**, including sanitized enterprise-AI alignment and Drive-controlled design-decision records.
+6. **Experimental prototype source** where useful for implementation evidence.
+7. **Reusable maintained mechanisms.**
+8. **Historical Git/PR lineage.**
 
-## Highest-Priority Gaps
+A later source does not supersede an earlier source outside its jurisdiction. Intentional project evolution does supersede older competing operational wording when explicitly adopted.
 
-### 1. Exact current versions of deployed instructions
-The project retains the intent behind Copilot personalization and collaborator-space instructions, but exact deployed versions may diverge from the remembered design state.
+## Current Governing V1 Stage Model
 
-**Action:** when a version becomes operational, preserve the exact deployed text and date/version it.
+**Set Purpose → Choose Calls → Review → Compare → Coach → Follow Up**
 
-### 2. Coaching methodology reconciliation
-PHUB/template-derived coaching structure appears valuable, but its canonical payload-free form is not yet clearly established.
+This six-stage representation is the current product architecture.
 
-**Action:** reconcile into one portable methodology artifact before building it into V1.
+Earlier wording — including `Scope → Build Review Set → Review Each Call ↻ → Synthesize → Coach / Confirm / Commit → Follow Up / Resolve` and the detailed 19-stage reconstruction — remains evidence and development lineage. It does **not** remain a competing current stage model.
 
-### 3. Stabilized V1 proposal
-The leadership-facing proposal exists in project development but no exact repository version has yet been designated as canonical.
+## Current Repository-Managed V1 Sources
 
-**Action:** once the proposal is stabilized, preserve and promote one exact version.
+| Path | Role | Status |
+|---|---|---|
+| `deliverables/v1-call-review-field-guide/README.md` | Current repository specification and human/enterprise boundary | GOVERNING candidate on this branch |
+| `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md` | Sanitized reconstructed operating evidence | CANONICAL EVIDENCE |
+| `deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md` | Sanitized enterprise-AI design consequences | ADOPTED DESIGN INPUT |
+| `deliverables/v1-call-review-field-guide/prototypes/v0.1-interactive-companion/` | Preserved bounded interactive implementation evidence | EXPERIMENTAL |
 
-### 4. Enterprise verification for role-specific AI use
-The enterprise baseline supports a human-led personal-productivity model but does not, by itself, verify every Coaching Partner use case or data type.
+### Canonical current-state evidence
 
-**Action:** verify role-specific permissions, transcript/performance-metric handling, retention rules, business-unit restrictions, and governance requirements before operational deployment of AI-assisted call-review mechanisms.
+`deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md`
+
+- Source SHA-256: `ba3f2d322422e257796d84dfa7c9d2a808d187a51b04d6330b26743d9757dabd`
+- Original preservation commit: `1767df24931aabc0d6d46692980959250a301469`
+
+The package remains authoritative for what the reconstructed current-state evidence says, including its evidence labels, unresolved questions, and 19-stage detail. It is not permission to treat unresolved claims as verified requirements, and it does not override the intentionally evolved six-stage V1 product representation.
+
+### Enterprise-AI alignment
+
+`deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md`
+
+This file preserves transferable design consequences only. Raw company training, screenshots, transcripts, internal guidance, customer information, employee-specific information, and other enterprise payload do not belong in this repository.
+
+AI may support authorized evidence organization, summarization, note structure, question generation, and coaching preparation. Consequential interpretation, evidence sufficiency, employee-performance judgment, coaching priority, formal action, accountability, and resolution remain human-owned.
+
+### Experimental prototype
+
+`deliverables/v1-call-review-field-guide/prototypes/v0.1-interactive-companion/`
+
+This subtree was reconciled from historical PR #1 onto the current-main lineage without importing PR #1’s stale manifest or historical proposal draft. It is preserved as **EXPERIMENTAL** implementation evidence and does not define current product authority.
+
+Where prototype wording diverges from the current README, current adopted architecture, or current Drive authority, the prototype is historical/experimental.
+
+## Drive-Controlled Current References
+
+These artifacts are intentionally referenced rather than copied into GitHub:
+
+| Artifact | Drive ID | Role |
+|---|---|---|
+| `At-Home Model Work — Current Program State` | `1CG4IjJioIp_4Z47JMfT1m24SAtxJxFxBAsRzDt30rRM` | Living overall project state |
+| `At-Home Model Work — Consolidation Control Index` | `1QASDU86WFfU4FBXNskysOa6LDquUXptCqIZU2kSLSvg` | Authority/artifact/reconciliation/retirement control |
+| `V1_Coaching_Partner_Leadership_Brief_ONE_PAGE_HYBRID_FINAL_CANDIDATE_2026-08-19.pdf` | `1Guy_pknHNUFkTzRYr76XF6DYKJaeS7Me` | Current governing one-page leadership communication |
+| `V1_Coaching_Partner_Call_Review_Field_Guide_Leadership_Brief_Draft_4.pdf` | `1n0mWSJzsP9A1UNwt699Njz6gV4H1wp7g` | Substantive leadership provenance |
+| `V1 Call Review — Design Change Record — Tenured Leader Observation — 2026-08-18` | `1W-Dsfll0W6Bh4iojySFTVe4NNfbTLlR_5JMKZh786WA` | Explicit adopted design changes |
+| `Deep_Research_Call_Review_Methodology_Architecture.pdf` | `1lnjLhoU7K8q4F2MPZdKP1VZN996tCvee` | RESEARCH supporting architecture |
+
+Research remains evidence until explicitly adopted. Leadership presentation artifacts remain Drive-controlled deliverables rather than repository specifications.
+
+## Current V1 Method Boundary
+
+V1 is purpose-led, evidence-first, progressively interpretive, and decision-oriented.
+
+- Establish the review purpose before selecting evidence.
+- Preserve observation before interpretation.
+- Keep individual-call evidence visible before cross-call comparison/synthesis.
+- Make evidence → finding → interpretation → sufficiency → action traceable.
+- Treat `insufficient evidence` as a valid outcome.
+- Standardize evidence selection/capture and conclusion links while preserving human professional judgment over diagnosis, sufficiency, priority, coaching, accountability, and resolution.
+- Support PHUB and the governing coaching framework; do not replace them.
+- Keep the method usable without AI.
+
+Automated scoring, autonomous employee evaluation, production integration, consequential AI decisioning, or employee-impacting automation are separately governed future use cases, not bounded V1.
+
+## Reconciliation Record
+
+### Historical PR #1
+
+PR #1 (`Preserve V1 prototype and leadership proposal foundation`) is **not** to be merged wholesale.
+
+Useful repository-managed content retained from that branch:
+
+- the `v0.1-interactive-companion` prototype subtree.
+
+Intentionally not promoted from PR #1:
+
+- its stale higher-numbered manifest;
+- its historical proposal v0.1 as current authority;
+- branch-level assumptions that predate August 18–19 adopted design evolution.
+
+PR #1 remains provenance until closed as superseded by this reconciliation path.
+
+### Diagnostic PR #2
+
+PR #2 (`Verify GitHub connector write path`) is diagnostic evidence only and has no product authority. It should be closed without merge after the reconciliation record is staged.
+
+## Current Program Position
+
+Established:
+
+- canonical reconstructed current-state evidence;
+- current six-stage V1 architecture;
+- adopted research/design consequences;
+- human-ownership and enterprise-AI boundary;
+- current Drive-controlled leadership one-pager;
+- bounded validation materials;
+- preserved experimental prototype source.
+
+Not yet established:
+
+- completed independent practitioner validation of the current V1;
+- deployment approval;
+- role-specific authorization for every possible AI-assisted enterprise data use;
+- separately governed automation/scoring/production integration.
+
+Current formal posture: **Validate the bounded V1 — do not deploy it yet.**
+
+## Open External Constraints
+
+1. **Enterprise retention/permissions:** protected enterprise payload and role-specific permissions are controlled outside this repository. Personal/cloud copies do not become authorized merely because they exist.
+2. **Practitioner validation:** the next substantive product action after consolidation is bounded independent practitioner validation.
+3. **Thread retirement:** historical ChatGPT threads require verified zero-delta retirement checks, but every historical thread does not need processing for current-state reliability.
 
 ## Minimal Preservation Rule
 
-Do **not** archive every chat.
+Do not archive every chat or mirror every Drive artifact into GitHub.
 
-Promote a source into the Library only when losing it would make it materially harder to:
+Promote repository content only when losing it would materially impair one of the following:
 
-- reconstruct V1,
-- explain a consequential design decision,
-- validate the workflow,
-- reproduce a deployed operating mechanism,
-- or transfer reusable methodology without relying on memory.
+- reproducible source/prototype code;
+- a governing/versioned repository specification;
+- canonical structured evidence or workflow maintained in Git;
+- a reusable maintained mechanism;
+- repository authority/indexing;
+- or a meaningful frozen version whose Git history matters.
 
-Everything else can remain in the Museum or in its original enterprise environment.
-
-## Immediate Next State
-
-The V1 current-state evidence gap remains closed. The complete transfer package and its 19-stage workflow reconstruction remain the canonical V1 current-state evidence source.
-
-The enterprise AI baseline has now been incorporated as a **sanitized adopted design input**, strengthening the human-accountability and governance boundary without replacing the current-state evidence.
-
-The next preservation pass should focus on whichever artifact becomes operationally necessary first among:
-
-- the coaching methodology/template reconciliation;
-- the stabilized V1 proposal;
-- the exact deployed Copilot instructions;
-- verified role-specific enterprise AI constraints for Coaching Partner workflows.
-
-Future V1 design changes should distinguish clearly between:
-
-- what the canonical current-state evidence says;
-- what has been verified since that evidence was collected;
-- what is a proposed improvement;
-- what has been adopted into the user-facing V1 Field Guide;
-- and what remains enterprise-bound rather than portable project material.
+Everything else remains Drive-controlled, enterprise-bound, adjacent, or historical according to its actual jurisdiction.
