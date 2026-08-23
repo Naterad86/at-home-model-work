@@ -1,8 +1,8 @@
 # At-Home Model Work — Project Source Manifest
 
-**Version:** 0.5 — reconciliation candidate  
+**Version:** 0.5  
 **Date:** 2026-08-23  
-**Status:** CANDIDATE on `controller/reconcile-v1-authority-2026-08-23`; becomes repository authority only after Nate-approved merge to `main`.  
+**Status:** GOVERNING on `main`; promoted through Nate-approved PR #3 using a normal merge that preserved the reconciliation commits.  
 **Purpose:** Identify the minimum repository-managed sources required to preserve current V1 continuity without duplicating overall project state or non-repository Drive authority.
 
 ## Repository Role
@@ -49,7 +49,7 @@ Earlier wording — including `Scope → Build Review Set → Review Each Call �
 
 | Path | Role | Status |
 |---|---|---|
-| `deliverables/v1-call-review-field-guide/README.md` | Current repository specification and human/enterprise boundary | GOVERNING candidate on this branch |
+| `deliverables/v1-call-review-field-guide/README.md` | Current repository specification and human/enterprise boundary | GOVERNING |
 | `deliverables/v1-call-review-field-guide/evidence/Download the V1 Call Review Transfer Package.md` | Sanitized reconstructed operating evidence | CANONICAL EVIDENCE |
 | `deliverables/v1-call-review-field-guide/evidence/2026-08-18-enterprise-ai-alignment.md` | Sanitized enterprise-AI design consequences | ADOPTED DESIGN INPUT |
 | `deliverables/v1-call-review-field-guide/prototypes/v0.1-interactive-companion/` | Preserved bounded interactive implementation evidence | EXPERIMENTAL |
@@ -113,7 +113,7 @@ Automated scoring, autonomous employee evaluation, production integration, conse
 
 ### Historical PR #1
 
-PR #1 (`Preserve V1 prototype and leadership proposal foundation`) is **not** to be merged wholesale.
+PR #1 (`Preserve V1 prototype and leadership proposal foundation`) is **CLOSED — SUPERSEDED BY PR #3** and was not merged.
 
 Useful repository-managed content retained from that branch:
 
@@ -125,11 +125,15 @@ Intentionally not promoted from PR #1:
 - its historical proposal v0.1 as current authority;
 - branch-level assumptions that predate August 18–19 adopted design evolution.
 
-PR #1 remains provenance until closed as superseded by this reconciliation path.
+PR #1 remains historical provenance only.
 
 ### Diagnostic PR #2
 
-PR #2 (`Verify GitHub connector write path`) is diagnostic evidence only and has no product authority. It should be closed without merge after the reconciliation record is staged.
+PR #2 (`Verify GitHub connector write path`) is **CLOSED — DIAGNOSTIC COMPLETE** and was not merged. It established no product or project authority.
+
+### Reconciliation PR #3
+
+PR #3 (`Reconcile V1 authority onto current main`) is **MERGED**. It was merged with GitHub merge method `merge`, not squash or rebase, preserving the three reconciliation commits. Merge commit: `ddddf63d1b55d2576db90020fa93bb3ba4470355`.
 
 ## Current Program Position
 
