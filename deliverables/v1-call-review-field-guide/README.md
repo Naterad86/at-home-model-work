@@ -1,50 +1,58 @@
 # V1 Coaching Partner Call-Review Field Guide
 
-This directory contains the current primary deliverable for At-Home Model Work.
+This directory contains the repository-managed specification, evidence package, and preserved prototype source for the current At-Home Model Work V1.
 
-## Current Scope
+## Current Governing V1 Representation
 
-V1 is centered on the end-to-end Coaching Partner call-review workflow:
+**Set Purpose → Choose Calls → Review → Compare → Coach → Follow Up**
 
-**Scope → Build Review Set → Review Each Call ↻ → Synthesize → Coach / Confirm / Commit → Follow Up / Resolve**
+This six-stage representation is the current product architecture. Earlier workflow wording and the detailed 19-stage current-state reconstruction remain development lineage and evidence; they are not competing operational authority.
 
-The Field Guide should help a Coaching Partner complete this recurring job consistently and efficiently from initial review need through follow-up and resolution.
+## Method Boundary
 
-## Design Boundary
+V1 is purpose-led, evidence-first, progressively interpretive, and decision-oriented.
 
-The 19-stage current-state workflow reconstruction remains an evidence base, not the user-facing structure.
+- Establish why the review is being performed before selecting evidence.
+- Preserve call-level observation before broader interpretation.
+- Keep individual reviews visible before cross-call comparison and synthesis.
+- Make the link from evidence → finding → interpretation → sufficiency → action traceable.
+- Treat evidence sufficiency, diagnosis, coaching priority, accountability, and resolution as consequential human judgments.
+- Treat `insufficient evidence` as a valid outcome rather than forcing a conclusion.
 
-Documentation, enterprise systems, AI techniques, prompt structures, Copilot instructions, diagnostic methods, and other mechanisms should support the workflow at the point of need rather than becoming separate V1 products.
+The Field Guide supports PHUB and the governing coaching framework; it does not replace either. It must remain usable without AI.
 
-Broader project concepts and architectures remain deferred unless V1 exposes a concrete dependency.
+## Canonical Evidence
 
-## Current Development Principle
+The canonical current-state evidence package is:
 
-Prefer a purpose-led, evidence-linked, judgment-centered methodology over a scorecard-first, taxonomy-heavy, or technology-first design.
+`evidence/Download the V1 Call Review Transfer Package.md`
 
-The V1 should remain human-operable even if all AI assistance disappeared.
+That package preserves the reconstructed operating workflow and evidence labels. Its historical workflow detail is evidence for the current architecture, not the current user-facing stage model.
 
-## Enterprise AI Alignment — 2026-08-18
-
-A review of the enterprise AI baseline added an explicit governance and human-accountability boundary to V1.
-
-Adopted implications:
-
-- AI may support authorized evidence organization, summarization, note structure, question generation, and coaching preparation.
-- AI does not own consequential interpretation, employee-performance judgment, coaching priority, or formal action decisions.
-- AI-generated material must remain reviewable and subordinate to source evidence and professional judgment.
-- The Field Guide remains fully executable without AI; AI assistance is point-of-need support, not a workflow stage.
-- Any future move toward automated evaluation, scoring, autonomous workflow execution, production integration, or employee-impacting decisions must be treated as a separately governed use case rather than silently folded into V1.
-- Role-specific data permissions, transcript use, performance-metric handling, retention, and business-unit restrictions remain enterprise-verification questions before operational deployment.
-
-Sanitized alignment record:
+Sanitized enterprise-AI alignment is retained at:
 
 `evidence/2026-08-18-enterprise-ai-alignment.md`
 
-The underlying company training, screenshots, transcripts, and internal guidance remain enterprise-bound and are not stored in this repository.
+Raw company training, screenshots, transcripts, internal guidance, customer information, employee-specific information, and other enterprise payload do not belong in this repository.
+
+## Human-Ownership Boundary
+
+AI may support authorized evidence organization, summarization, note structure, question generation, and coaching preparation. It does not own consequential interpretation, employee-performance judgment, evidence sufficiency, coaching priority, formal action, accountability, or resolution decisions.
+
+Any future automated evaluation, scoring, autonomous workflow execution, production integration, or employee-impacting decisioning is a separately governed use case.
+
+## Prototype Status
+
+`prototypes/v0.1-interactive-companion/` is preserved **EXPERIMENTAL** implementation evidence. It was reconciled from the historical PR #1 prototype branch onto the current-main lineage without promoting the stale PR #1 manifest or historical proposal draft.
+
+The prototype does not define current product authority. Current architecture and evidence control where prototype details diverge.
+
+## Leadership and Project-State Authority
+
+Leadership briefs, research PDFs, validation records, and overall current program state are Google Drive-controlled non-repository artifacts. They are referenced by the repository manifest when necessary; they are not duplicated here as synchronized peers.
+
+The current leadership decision remains bounded development and practitioner validation — **not deployment**.
 
 ## Preservation Boundary
 
-Do not place customer information, agent-specific protected information, proprietary enterprise payload, credentials, or other restricted material in this directory.
-
-Preserve transferable structure, methodology, sanitized examples, specifications, and project-created artifacts only.
+Keep repository content limited to maintained source, specifications, canonical structured workflows/prompts, reusable mechanisms, repository manifests, and meaningful frozen versions whose history matters. Preserve transferable structure, not protected enterprise payload.
