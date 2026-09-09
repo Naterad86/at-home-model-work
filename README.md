@@ -1,126 +1,25 @@
-At-Home Model Work
+# At-Home Model Work
 
-This repository is the durable, version-controlled preservation layer for the At-Home Model Work project.
+This repository preserves promoted project knowledge, maintained artifacts, reusable mechanisms, and reconstructable history. ChatGPT remains the main working environment; Drive controls the living overall program state and non-repository records.
 
-The project itself is developed primarily through ChatGPT and related working environments. GitHub is used to preserve the parts of that work that have become authoritative, reusable, operationally important, or necessary to reconstruct the project later.
+## Start with current authority
 
-Purpose
+1. Read the [governing source manifest](PROJECT_SOURCE_MANIFEST.md) for source jurisdiction, evidence identities, and reconciliation provenance.
+2. Read the [V1 repository specification](deliverables/v1-call-review-field-guide/README.md) for the current six-stage representation: **Set Purpose → Choose Calls → Review → Compare → Coach → Follow Up**.
+3. Check the exact [living Current Program State in Drive](https://docs.google.com/document/d/1CG4IjJioIp_4Z47JMfT1m24SAtxJxFxBAsRzDt30rRM/edit) before planning or executing project work. Dated repository posture does not grant practitioner-test or deployment permission; the current project gate controls.
 
-The broader project develops practical AI-enabled workflows, systems, methodologies, and artifacts while improving the ability to:
+## Working view
 
-- identify useful AI leverage;
-- define operational problems accurately;
-- choose appropriate technical and nontechnical mechanisms;
-- design workflows and systems others can actually use;
-- understand enough technical substrate to make sound decisions;
-- diagnose failures at the correct layer;
-- preserve reusable knowledge without preserving unnecessary raw context;
-- and finish useful deliverables.
+| Location | Use |
+|---|---|
+| [V1 deliverable](deliverables/v1-call-review-field-guide/README.md) | Current repository specification and links to canonical evidence; the prototype remains experimental |
+| [Library](library/README.md) | Current reusable methods and the promoted voice system |
+| [Museum](museum/README.md) | Superseded or historical navigation and development provenance |
 
-The current primary deliverable is the V1 Coaching Partner Call-Review Field Guide, organized around the workflow:
+Pending, unclassified work remains in its originating working environment or the vault inbox until checked and promoted. Active drafts remain drafts. Useful evidence keeps its assigned authority even when old; historical wording does not compete with current guidance.
 
-Scope → Build Review Set → Review Each Call ↻ → Synthesize → Coach / Confirm / Commit → Follow Up / Resolve
+## Preservation and closeout
 
-Repository Role
+At ordinary task closeout, integrate accepted changes into the owning current record, update current pointers and affected links, and archive finished handoffs or processed intake with provenance. Verify only the locations actually synchronized. Retain Git history, original evidence identities, and useful historical contents; never force-push.
 
-This repository is a source of truth for promoted project material, not a transcript archive.
-
-ChatGPT and other AI environments may contain active reasoning, experiments, incomplete ideas, and exploratory work.
-
-Material should be promoted here when it becomes one or more of the following:
-
-- canonical project guidance;
-- a reusable methodology or framework;
-- an important specification or architecture;
-- a meaningful project artifact;
-- a stable workflow or template;
-- evidence necessary to understand project development;
-- or a deliverable that should survive individual chats and AI environments.
-
-Planned Structure
-
-/
-├── README.md
-├── PROJECT_SOURCE_MANIFEST.md
-├── library/
-├── museum/
-└── deliverables/
-    └── v1-call-review-field-guide/
-
-"PROJECT_SOURCE_MANIFEST.md"
-
-Tracks authoritative project sources, important artifacts, current status, and where canonical material lives.
-
-"library/"
-
-Contains current, reusable, portable knowledge.
-
-Examples:
-
-- methodologies;
-- operating principles;
-- workflow architectures;
-- prompt structures;
-- specifications;
-- generalized lessons;
-- reusable decision frameworks.
-
-Library material should represent what the project currently believes is useful and transferable.
-
-"museum/"
-
-Contains historical material worth preserving because it documents how the project developed.
-
-Examples:
-
-- deprecated architectures;
-- superseded instructions;
-- significant earlier versions;
-- experiments that materially influenced later decisions.
-
-Museum material is evidence, not current guidance.
-
-"deliverables/"
-
-Contains artifacts being built for actual use.
-
-The current primary deliverable is:
-
-"deliverables/v1-call-review-field-guide/"
-
-Preservation Principle
-
-AI memory is a cache, not the source of truth.
-
-Useful project continuity should come from explicit artifacts, version history, source manifests, and reproducible structure rather than depending on any individual conversation retaining perfect context.
-
-Information Boundary
-
-This repository should preserve STRUCTURE rather than protected PAYLOAD.
-
-Appropriate content includes:
-
-- generalized workflows;
-- methodologies;
-- sanitized examples;
-- reusable reasoning;
-- schemas;
-- specifications;
-- project-created artifacts.
-
-Do not place customer information, protected enterprise information, proprietary internal content, credentials, secrets, or other restricted data in this repository.
-
-Enterprise systems may reason over authorized enterprise information inside their approved environment. This repository preserves only transferable project structures and appropriately sanitized artifacts.
-
-Development Principle
-
-Prefer the smallest durable structure that supports useful work.
-
-Do not create folders, frameworks, abstractions, or infrastructure merely because they may become useful later.
-
-New structure should be added when the project produces a concrete need for it.
-
----
-
-Current status: Repository initialized as the durable preservation layer for At-Home Model Work.# at-home-model-work
-Durable, version-controlled home for At-Home Model Work: preserving canonical methodologies, workflows, project architecture, reusable AI practices, and deliverables. Active experimentation happens elsewhere; GitHub holds promoted project knowledge, history, and artifacts intended to survive individual AI sessions.
+Preserve transferable structure rather than protected enterprise, customer, employee, or personal payload. Source authority and project gates remain unchanged. Use the smallest durable structure that supports the work.
